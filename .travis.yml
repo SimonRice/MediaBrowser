@@ -5,6 +5,12 @@ cache:
   directories:
     - Carthage
 
+addons:
+  homebrew:
+    packages:
+      - carthage
+    update: true
+
 before_install:
   - |
     gem install xcpretty-travis-formatter
@@ -13,8 +19,6 @@ before_install:
       pod repo update
       pod update
     else
-      brew install carthage || true
-      brew outdated carthage || brew upgrade carthage
       carthage update --platform ios --cache-builds
     fi;
 script:
