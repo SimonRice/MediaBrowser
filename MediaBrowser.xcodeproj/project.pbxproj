@@ -87,13 +87,9 @@
 		19B277BF1F63BE5400194941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		19E1F62B1F5FD5F8004D3BA8 /* Atoms.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atoms.mp4; sourceTree = "<group>"; };
 		19E1F62D1F5FD8EE004D3BA8 /* MediaBrowserDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaBrowserDelegate.swift; sourceTree = "<group>"; };
-		3AEDB6B991DF32A68AA1972E /* Pods-MediaBrowserDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaBrowserDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo.release.xcconfig"; sourceTree = "<group>"; };
-		56EF6B3B274F5728F0712339 /* Pods-MediaBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaBrowser/Pods-MediaBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		570922FC966732103FB7D306 /* Pods_MediaBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71596D6B20148BBE00870E29 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		71596D6D20148BC300870E29 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
-		849923070967750DB33DBED9 /* Pods-MediaBrowserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaBrowserDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaBrowserDemo/Pods-MediaBrowserDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		BF32D5C5A285C283435A6A44 /* Pods-MediaBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaBrowser/Pods-MediaBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,24 +115,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A84EDB382446209B7081631 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BF32D5C5A285C283435A6A44 /* Pods-MediaBrowser.debug.xcconfig */,
-				56EF6B3B274F5728F0712339 /* Pods-MediaBrowser.release.xcconfig */,
-				849923070967750DB33DBED9 /* Pods-MediaBrowserDemo.debug.xcconfig */,
-				3AEDB6B991DF32A68AA1972E /* Pods-MediaBrowserDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1906ABA71F5F81110052DC3A = {
 			isa = PBXGroup;
 			children = (
 				1906ABB31F5F81120052DC3A /* MediaBrowser */,
 				1906ABC11F5F812D0052DC3A /* MediaBrowserDemo */,
 				1906ABB21F5F81110052DC3A /* Products */,
-				0A84EDB382446209B7081631 /* Pods */,
 				C20AA726BED7B222DA9A2FE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -561,7 +545,6 @@
 		};
 		1906ABBA1F5F81120052DC3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF32D5C5A285C283435A6A44 /* Pods-MediaBrowser.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -587,7 +570,6 @@
 		};
 		1906ABBB1F5F81120052DC3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56EF6B3B274F5728F0712339 /* Pods-MediaBrowser.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -612,7 +594,6 @@
 		};
 		1906ABCF1F5F812D0052DC3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 849923070967750DB33DBED9 /* Pods-MediaBrowserDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -627,7 +608,6 @@
 		};
 		1906ABD01F5F812D0052DC3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AEDB6B991DF32A68AA1972E /* Pods-MediaBrowserDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
