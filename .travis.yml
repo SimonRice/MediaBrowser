@@ -3,7 +3,7 @@ osx_image: xcode8.3
 cache: cocoapods
 before_install:
   - 
-    if [ "$PACKAGE_MANAGER" = 'cocoapods' ]; then 
+    if [ "${PACKAGE_MANAGER}" = "cocoapods" ]; then 
       gem install cocoapods
       pod repo update
       pod update
