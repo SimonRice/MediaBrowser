@@ -7,9 +7,9 @@ cache:
 
 before_install:
   - |
-    gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document
+    gem install xcpretty-travis-formatter --no-ri --no-document
     if [ "${PACKAGE_MANAGER}" = "cocoapods" ]; then 
-      gem install cocoapods --no-rdoc --no-ri --no-document
+      gem install cocoapods --no-ri --no-document
       pod repo update
       pod update
     else
