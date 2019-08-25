@@ -1,6 +1,10 @@
 language: objective-c
 osx_image: xcode10.3
-cache: cocoapods
+cache: 
+  cocoapods: true
+  directories:
+    - Carthage
+
 before_install:
   - |
     gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document
