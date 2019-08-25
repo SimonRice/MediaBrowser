@@ -13,7 +13,7 @@ before_install:
       carthage update --platform ios --cache-builds
     fi;
 script:
-- xcodebuild -scheme 'MediaBrowser' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty -c
+- xcodebuild -scheme 'MediaBrowser' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
 
 matrix:
   include:
