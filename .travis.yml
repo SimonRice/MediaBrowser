@@ -3,8 +3,9 @@ osx_image: xcode10.3
 cache: cocoapods
 before_install:
   - |
+    gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document
     if [ "${PACKAGE_MANAGER}" = "cocoapods" ]; then 
-      gem install cocoapods
+      gem install cocoapods --no-rdoc --no-ri --no-document
       pod repo update
       pod update
     else
@@ -13,7 +14,7 @@ before_install:
       carthage update --platform ios --cache-builds
     fi;
 script:
-- xcodebuild -scheme 'MediaBrowser' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
+- xcodebuild -scheme 'MediaBrowser' -sdk iphonesimulator CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 matrix:
   include:
