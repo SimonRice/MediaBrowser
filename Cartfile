@@ -1,2 +1,2 @@
 github "luispadron/UICircularProgressRing" ~> 6.2.1
-github "rs/SDWebImage" ~> 4.2.2
+github "rs/SDWebImage" ~> 5.1
