@@ -26,5 +26,9 @@ script:
 
 matrix:
   include:
-    - env: PACKAGE_MANAGER=cocoapods
-    - env: PACKAGE_MANAGER=carthage
+    - env: 
+      - PACKAGE_MANAGER=cocoapods
+      - ISOLATED=true
+    - env: 
+      - PACKAGE_MANAGER=carthage
+      - ISOLATED=true
