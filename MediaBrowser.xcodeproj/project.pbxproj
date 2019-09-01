@@ -568,7 +568,7 @@
 		1906ABCF1F5F812D0052DC3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
 				INFOPLIST_FILE = MediaBrowserDemo/Info.plist;
@@ -582,7 +582,7 @@
 		1906ABD01F5F812D0052DC3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
 				INFOPLIST_FILE = MediaBrowserDemo/Info.plist;
